@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <title>Trang sản phẩm</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" href="Resources/css/myStyle.css">
+    <link rel="stylesheet" href="Resources/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="Resources/js/myJS.js"></script>
+
+</head>
+
+
+
+<!-- Body -->
+
+<body>
+    <!-- Header -->
+    <div w3-include-html="./partials/headerWithoutSlide.html"></div>
+
+    <!-- //Header -->
+
+
+    <!-- Render body -->
+    <div class="container">
+
+        <!-- Địa chỉ trang -->
+        <ol class="dia-chi" style="background-color: white; font-size: 20px;">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li class="active">Thông tin cá nhân</li>
+        </ol> <br>
+        <!-- // Địa chỉ trang -->
+
+        <div class="row mt-0" style="margin-top: 20px !important;">
+            <div class="col-4" style="min-width: 18px; margin-bottom: 68px;">
+                <ul class="menu-items" style="box-shadow: 0px 0px 15px 0px #D6D6D6; padding: 10px;">
+                    <li id="as1">
+                        <a href="#s1" class="my-section">
+                            <div class="my-secsion-item">
+                                <img src="Resources/myImages/user-s.png" alt="" class="user-img">
+                                <p class="user-name my-active" id="name-active">Huỳnh Ngọc Sơn</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="as2">
+                        <a href="#s2" class="my-section">
+                            <div class="my-secsion-item">
+                                <img src="Resources/myImages/icon-chuong.jpg" alt="" class="user-img">
+                                <p class="user-name">Thông báo của tôi</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="as3">
+                        <a href="#s3" class="my-section">
+                            <div class="my-secsion-item">
+                                <img src="Resources/myImages/icon-don-hang.png" alt="" class="user-img">
+                                <p class="user-name">Quản lý đơn hàng</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="as4">
+                        <a href="#s4" class="my-section">
+                            <div class="my-secsion-item">
+                                <img src="Resources/myImages/icon-dia-chi.png" alt="" class="user-img">
+                                <p class="user-name">Sổ địa chỉ</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="as5">
+                        <a href="#s5" class="my-section">
+                            <div class="my-secsion-item">
+                                <img src="Resources/myImages/icon-da-xem.png" alt="" class="user-img">
+                                <p class="user-name">Sản phẩm đã xem</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-8 my-al" style="background-color: rgb(239, 239, 239);box-shadow: 0px 0px 15px 0px #D6D6D6;">
+                <div id="s1" class="p-5">
+                    <h1 class="title">Thông tin tài khoản</h1>
+                    <div style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);">
+                        <div class="my-group">
+                            <label for="name" class="col-lg-3 label-text">Họ tên:</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="my-control w-100" id="name" value="">
+                            </div>
+                        </div>
+
+                        <div class="my-group">
+                            <label for="phone" class="col-lg-3 label-text">Số điện thoại:</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="my-control w-100" id="phone" value="">
+                            </div>
+                        </div>
+
+                        <div class="my-group">
+                            <label for="email" class="col-lg-3 label-text">Email:</label>
+                            <div class="col-lg-9">
+                                <input type="email" class="my-control w-100" id="email" value="">
+                            </div>
+                        </div>
+
+                        <div class="my-group">
+                            <label for="address" class="col-lg-3 label-text">Địa chỉ:</label>
+                            <div class="col-lg-9">
+                                <textarea class="my-control w-100" id="address" rows="3"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="my-group pb-3">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-9">
+                                <button class="btn btn-primary px-3 mt-3" style="font-size: 16px;"
+                                    id="btn-update-info">CẬP NHẬT</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div id="s2" class="p-5">
+                    <h1 class="title">Thông báo của tôi</h1>
+                    <div class="thong-baos">
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-1">
+
+                            <div class="content w-100">
+
+                                <div class="thong-tin thong-tin-1">
+                                    <div class="thong-bao-head">
+                                        <span class="ngay-thang">12/10/2020</span>
+                                        <i class="fa fa-bell" aria-hidden="true"
+                                            style="font-size: 26px; color: green;"></i>
+                                    </div>
+                                    <div class="thong-bao-text">
+                                        <p>
+                                            Hãy thay đổi mật khẩu thường xuyên để nâng cao bảo mật. Ngoài ra: <br>
+                                            1) Không nên sử dụng chung mật khẩu của email với mật khẩu của các tài khoản
+                                            khác. <br>
+                                            2) Luôn đăng xuất khỏi các tài khoản sau khi sử dụng trên thiết bị công cộng
+                                            hoặc thiết bị không phải của bản thân.
+                                        </p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="xem-chi-tiet">Xem chi tiết</a>
+                                </div>
+
+                            </div>
+                            <button class="close" id="data-close-1">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-2">
+
+                            <div class="content w-100">
+
+                                <div class="thong-tin thong-tin-2">
+                                    <div class="thong-bao-head">
+                                        <span class="ngay-thang">27/8/2020</span>
+                                        <i class="fa fa-gift" style="font-size: 26px; color: blue;"></i>
+                                    </div>
+                                    <div class="thong-bao-text">
+                                        <p>
+                                            Apple Giảm Khủng 20% Duy Nhất Hôm Nay 30/8 - Số Lượng Có Hạn
+                                        </p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="xem-chi-tiet">Xem chi tiết</a>
+                                </div>
+
+                            </div>
+                            <button class="close" id="data-close-2">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-3">
+
+                            <div class="content w-100">
+
+                                <div class="thong-tin thong-tin-1">
+                                    <div class="thong-bao-head">
+                                        <span class="ngay-thang">27/7/2020</span>
+                                        <i class="fa fa-bell" aria-hidden="true"
+                                            style="font-size: 26px; color: green"></i>
+                                    </div>
+                                    <div class="thong-bao-text">
+                                        <p>
+                                            Để mang đến trải nghiệm tốt nhất cho khách hàng, từ ngày 29/07/17, Tiki.vn
+                                            điều chỉnh tỉ lệ quy đổi Tiki Xu từ 1:5 (1000 Tiki Xu tương ứng với 5000
+                                            VNĐ) thành 1:1 (1000 Tiki Xu tương ứng với 1000 VNĐ). Số Tiki Xu của quý
+                                            khách sẽ được điều chỉnh x5 để có thể sử dụng theo tỉ lệ quy đổi mới, việc
+                                            điều chỉnh dự kiến sẽ hoàn tất trong ngày 27 - 28/07/2017. Do đó, từ 17h30
+                                            ngày 27/07/17 đến 23h59 ngày 28/07/17 Tiki.vn xin phép tạm ngưng tính năng
+                                            sử dụng Tiki Xu để bảo trì và nâng cấp hệ thống, Tiki.vn rất tiếc về sự bất
+                                            tiện này, mong quý khách thông cảm Mọi thông tin thắc mắc, quý khách vui
+                                            lòng liên hệ bộ phận Chăm Sóc Khách Hàng của Tiki.vn qua email
+                                            hotro@tiki.vn, hotline 1900 6035 (8h - 21h, 1000đ/ phút). Trân trọng.
+                                        </p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="xem-chi-tiet">Xem chi tiết</a>
+                                </div>
+
+                            </div>
+                            <button class="close" id="data-close-3">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-4">
+
+                            <div class="content w-100">
+
+                                <div class="thong-tin thong-tin-2">
+                                    <div class="thong-bao-head">
+                                        <span class="ngay-thang">19/7/2020</span>
+                                        <i class="fa fa-gift" style="font-size: 26px; color: blue;"></i>
+                                    </div>
+                                    <div class="thong-bao-text">
+                                        <p>
+                                            Black Friday Sale Sốc Hàng Công Nghệ Đã Mở - Săn Ngay!
+                                        </p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="xem-chi-tiet">Xem chi tiết</a>
+                                </div>
+
+                            </div>
+                            <button class="close" id="data-close-4">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-5">
+
+                            <div class="content w-100">
+
+                                <div class="thong-tin thong-tin-2">
+                                    <div class="thong-bao-head">
+                                        <span class="ngay-thang">10/6/2020</span>
+                                        <i class="fa fa-gift" style="font-size: 26px; color: blue;"></i>
+                                    </div>
+                                    <div class="thong-bao-text">
+                                        <p>
+                                            Giảm ngay 300k khi mua ĐH trên 1,500 triệu. Số lượng cực kỳ có hạn
+                                        </p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="xem-chi-tiet">Xem chi tiết</a>
+                                </div>
+
+                            </div>
+                            <button class="close" id="data-close-5">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-6">
+
+                            <div class="content w-100">
+
+                                <div class="thong-tin thong-tin-2">
+                                    <div class="thong-bao-head">
+                                        <span class="ngay-thang">14/5/2020</span>
+                                        <i class="fa fa-gift" style="font-size: 26px; color: blue;"></i>
+                                    </div>
+                                    <div class="thong-bao-text">
+                                        <p>
+                                            Từ 15/5/2020, Shop miễn phí giao tiêu chuẩn cho đơn hàng từ 250k, áp dụng
+                                            phí 19k cho đơn hàng dưới 250k. Thay đổi áp dụng cho khách hàng không phải
+                                            là thành viên Shop.
+                                        </p>
+                                    </div>
+                                    <a href="javascript:void(0)" class="xem-chi-tiet">Xem chi tiết</a>
+                                </div>
+
+                            </div>
+                            <button class="close" id="data-close-6">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="s3" class="p-5 ">
+                    <h1 class="title">Đơn hàng của tôi <span class="my-so-luong"></span></h1>
+                    <div class="section-content">
+
+                        <table class="don-hangs" id="table-order">
+                            <tr>
+                                <th>ID</th>
+                                <th>Ngày mua </th>
+                                <th>Sản phẩm </th>
+                                <th>Tổng tiền </th>
+                                <th>Trạng thái </th>
+                            </tr>
+                            <!-- <tr class="thanh-cong">
+                                <td>810512881 </td>
+                                <td>27/05/2020 </td>
+                                <td><a href="chitietsanpham.html">Điện thoại iPhone 11 256GB</a></td>
+                                <td>23.990.000₫ </td>
+                                <td>Giao hàng thành công </td>
+                            </tr>
+                            <tr class="bi-huy">
+                                <td>835382723 </td>
+                                <td>01/06/2020 </td>
+                                <td><a href="chitietsanpham.html">Laptop Dell Vostro 3590 i7 10510U/8GB/256GB/2GB
+                                        610R5/Win10 (GRMGK2)</a></td>
+                                <td>20.290.000₫ </td>
+                                <td>Đơn hàng bị huỷ </td>
+                            </tr>
+                            <tr class="thanh-cong">
+                                <td>684211971 </td>
+                                <td>25/06/2020 </td>
+                                <td><a href="chitietsanpham.html">Laptop HP 15s du1076TX i5 10210U/8GB/512GB/2GB
+                                        MX130/Win10 (1R8E2PA)</a></td>
+                                <td>17.490.000₫ </td>
+                                <td>Giao hàng thành công</td>
+                            </tr>
+                            <tr class="thanh-cong">
+                                <td>488174679</td>
+                                <td>17/08/2020</td>
+                                <td><a href="chitietsanpham.html">Apple Watch S5 40mm viền nhôm dây cao su</a></td>
+                                <td>11.990.000₫</td>
+                                <td>Giao hàng thành công</td>
+                            </tr>
+                            <tr class="thanh-cong">
+                                <td>830909011</td>
+                                <td>17/08/2020</td>
+                                <td><a href="chitietsanpham.html">Samsung Galaxy Watch Active 2 44mm viền thép dây
+                                        da</a></td>
+                                <td>7.990.000₫</td>
+                                <td>Giao hàng thành công</td>
+                            </tr>
+                            <tr class="hoan-tra">
+                                <td>810512881 </td>
+                                <td>27/05/2020 </td>
+                                <td><a href="chitietsanpham.html">Điện thoại iPhone 11 256GB</a></td>
+                                <td>23.990.000₫ </td>
+                                <td>Hoàn trả hàng </td>
+                            </tr>
+                            <tr class="thanh-cong">
+                                <td>835382723</td>
+                                <td>01/06/2020</td>
+                                <td><a href="chitietsanpham.html">Laptop Dell Vostro 3590 i7 10510U/8GB/256GB/2GB
+                                        610R5/Win10 (GRMGK2)</a></td>
+                                <td>20.290.000₫</td>
+                                <td>Giao hàng thành công</td>
+                            </tr>
+                            <tr class="het-hang">
+                                <td>226145699 </td>
+                                <td>22/09/2020 </td>
+                                <td><a href="chitietsanpham.html">Máy tính bảng Lenovo Tab E10 TB-X104L Đen</a></td>
+                                <td>3.190.000₫ </td>
+                                <td>Hết hàng </td>
+                            </tr>
+                            <tr class="thanh-cong">
+                                <td>684211971</td>
+                                <td>25/06/2020</td>
+                                <td><a href="chitietsanpham.html">Laptop HP 15s du1076TX i5 10210U/8GB/512GB/2GB
+                                        MX130/Win10 (1R8E2PA)</a></td>
+                                <td>17.490.000₫</td>
+                                <td>Giao hàng thành công</td>
+                            </tr>
+
+                            <tr class="thanh-cong">
+                                <td>488174679</td>
+                                <td>17/08/2020</td>
+                                <td><a href="chitietsanpham.html">Apple Watch S5 40mm viền nhôm dây cao su</a></td>
+                                <td>11.990.000₫</td>
+                                <td>Giao hàng thành công</td>
+                            </tr> -->
+
+                        </table>
+                    </div>
+                </div>
+                <div id="s4" class="p-5">
+                    <h1 class="title">Sổ địa chỉ</h1>
+                    <div class="thong-baos">
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-7">
+
+                            <div class="content w-100">
+
+                                <div class="thong-tin thong-tin-dia-chi">
+                                    <div class="thong-bao-head">
+                                        <span class="ten-lead">Huỳnh Ngọc Sơn</span>
+                                        <i class="fa fa-check-circle-o text-success" aria-hidden="true"
+                                            style="font-size: 14px;"></i>
+                                        <span class="dia-chi-lead">Địa chỉ mặc định</span>
+                                    </div>
+                                    <div class="thong-bao-text">
+                                        <p>
+                                            <span class="text-lead">Địa chỉ:</span>
+                                            ĐH Nông Lân, TP HCM( Nhà trọ sinh viên, đường số 1), Phường Linh Trung, Quận
+                                            Thủ Đức, Hồ Chí Minh
+                                        </p>
+                                        <p>
+                                            <span class="text-lead">Điện thoại:</span>
+                                            0351 521 032
+                                        </p>
+                                    </div>
+                                    <div class="text-center"><a href="javascript:void(0)" class="cap-nhat">CẬP NHẬT</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="close" id="data-close-7">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-8">
+
+                            <div class="content w-100">
+
+                                <div class="thong-tin thong-tin-dia-chi">
+                                    <div class="thong-bao-head">
+                                        <span class="ten-lead">Lê Diệu Nhi</span>
+                                    </div>
+                                    <div class="thong-bao-text">
+                                        <p>
+                                            <span class="text-lead">Địa chỉ:</span>
+                                            Số 2 Ngách 39 , Ngõ 178 Thái Hà , P. Trung Liệt, Q. Đống Đa, TP Hà Nội
+                                        </p>
+                                        <p>
+                                            <span class="text-lead">Điện thoại:</span>
+                                            0919 091 011
+                                        </p>
+                                    </div>
+                                    <div class="text-center"><a href="javascript:void(0)" class="cap-nhat">CẬP NHẬT</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="close" id="data-close-8">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-9">
+
+                            <div class="content w-100">
+
+                                <div class="thong-tin thong-tin-dia-chi">
+                                    <div class="thong-bao-head">
+                                        <span class="ten-lead">Hà Thanh Phương</span>
+                                    </div>
+                                    <div class="thong-bao-text">
+                                        <p>
+                                            <span class="text-lead">Địa chỉ:</span>
+                                            Số 10 Cô Bắc, Phường 2, Quận Phú Nhuận, TP HCM.
+                                        </p>
+                                        <p>
+                                            <span class="text-lead">Điện thoại:</span>
+                                            0864 111 232
+                                        </p>
+                                    </div>
+                                    <div class="text-center"><a href="javascript:void(0)" class="cap-nhat">CẬP NHẬT</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="close" id="data-close-9">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+
+                        <div class="wrapper-item-gio-hang card-san-pham card-close-9 them-dia-chi-card">
+
+                            <div class="thong-bao-content them-dia-chi-wrap" id="alert-them1">
+                                <div class="thong-bao-text mt-2">
+                                    <div class="row">
+                                        <div class="col-lg-4">Họ tên:</div>
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control" placeholder="Tên người nhận...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">Địa chỉ:</div>
+                                        <div class="col-lg-8">
+                                            <textarea name="" id="" rows="3" class="form-control"
+                                                placeholder="Địa chỉ người nhận..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">Số điện thoại:</div>
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control"
+                                                placeholder="Số điện thoại người nhận...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <button class="btn btn-primary d-block mx-auto"
+                                        style="min-width: 100px; font-size:16px;">
+                                        THÊM
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="close" id="close-them-dia-chi">
+                                <span>X</span>
+                            </button>
+                        </div>
+
+
+                        <div class="alert alert-info alert-dismissible mb-3 alert-them-dia-chi" id="alert-them10"
+                            style="display: none;">
+                            <button type="button" class="close" data-dismiss="alert"
+                                style="font-size: 25px; color: black; padding: 0px 7px; border-radius: 5px; background-color: red;  margin:5px;;">X</button>
+                            <div class="thong-bao-content">
+                                <div class="thong-bao-text mt-2">
+                                    <div class="row">
+                                        <div class="col-lg-4">Họ tên:</div>
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control" placeholder="Tên người nhận...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">Địa chỉ:</div>
+                                        <div class="col-lg-8">
+                                            <textarea name="" id="" rows="3" class="form-control"
+                                                placeholder="Địa chỉ người nhận..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">Số điện thoại:</div>
+                                        <div class="col-lg-8">
+                                            <input type="text" class="form-control"
+                                                placeholder="Số điện thoại người nhận...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <button class="btn btn-primary d-block mx-auto"
+                                        style="min-width: 100px; font-size:16px;">
+                                        THÊM
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <button class="btn btn-info" style="font-size:16px;" id="btn-them">
+                            <i class="fa fa-plus mr-3" aria-hidden="true"></i>THÊM ĐỊA CHỈ MỚI
+                        </button>
+
+                        <script>
+
+
+                        </script>
+
+
+                    </div>
+                </div>
+                <div id="s5" class="p-5">
+                    <h1 class="title">Sản phẩm đã xem <span class="my-so-luong"></span></h1>
+                    <div class="row">
+                        <!-- Danh sách các sản phẩm -->
+                        <div>
+                            <div class="wrapper viewed-products">
+
+                            </div>
+                        </div>
+                        <!-- // Danh sách các sản phẩm -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                var sOld = 1;
+                var sNew = 1;
+                $("#as1").addClass("active-section");
+                $(window).scroll(function () {
+                    var top = $(this).scrollTop();
+
+                    // if(sOld != sNew) { đổi màu }
+
+                    // s1
+                    if (top < 740 - 100) {
+                        sNew = 1;
+                    }
+                    // s2
+                    else if (top < 2399 - 300) {
+                        sNew = 2;
+                    }
+                    // s3
+                    else if (top < 3350 - 300) {
+                        sNew = 3;
+                    }
+                    // s4
+                    else if (top < 4200 - 300) {
+                        sNew = 4;
+                    }
+                    // s5
+                    else {
+                        sNew = 5;
+                    }
+                    if (sNew != sOld) {
+                        sOld = sNew;
+                        for (var j = 1; j <= 5; j++) {
+                            $("#as" + j).removeClass("active-section");
+                        }
+                        $("#as" + sNew).addClass("active-section");
+                    }
+                })
+            })
+        </script>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="my-modal">
+        <div class="modal-header d-flex">
+            <div class="modal-header-text mr-auto">Thông báo</div>
+            <button class="modal-close ml-auto btn btn-warning">Đóng</button>
+        </div>
+        <div class="modal-text lead">Bạn đã thêm sản phẩm vào giỏ hàng thành công!</div>
+    </div>
+    <!-- End modal -->
+
+    </div>
+
+    <!-- End Render body -->
+
+
+    <div w3-include-html="./partials/footer.html"></div>
+
+    <script src="./assets/js/includeHtml.js"></script>
+    <script type="module" src="./assets/js/thongtinkhachhang.js"></script>
+    <script type="module" src="./assets/js/header.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang login</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Resources/css/styleLogin.css">
+
+</head>
+
+<body>
+	<!-- main -->
+	<div>
+		<div class="content">
+			<div class="block text">
+				<!-- login form -->
+				<div class="login-form">
+					<h1 class="text-center">Đăng ký</h1>
+					<div>
+						<form action="" method="" id="fileinfo" enctype="multipart/form-data">
+							<p style="font-size: 18px;" class="text-center text-danger" id="mess-alert"></p>
+							<p style="font-size: 18px;">Họ tên</p>
+							<input type="text" style="color: white;" class="name color-transparent" name="username"
+								id="txt-name" value="test1">
+							<p style="font-size: 18px;" class="mt-5">Email</p>
+							<input type="text" style="color: white;" class="name color-transparent" name="email" id="txt-email"
+								value="test1@gmail.com">
+							<p style="font-size: 18px;" class="mt-5">Địa chỉ</p>
+							<input type="text" style="color: white;" class="name color-transparent" name="address"
+								id="txt-address" value="test1">
+
+							<p style="font-size: 18px;" class="mt-5">Số điện thoại</p>
+							<input type="text" style="color: white;" class="name color-transparent" name="phone" id="txt-phone"
+								value="123456789">
+
+							<p style="font-size: 18px;" class="mt-5">Tài khoản</p>
+							<input type="text" style="color: white;" class="nname color-transparent" name="username"
+								id="txt-username" value="test1">
+
+							<p style="font-size: 18px;" class="mt-5">Mật khẩu</p>
+							<input type="password" style="color: white;" class="name color-transparent" name="password"
+								id="txt-password" value="test1">
+
+
+							<p style="font-size: 18px;" class="mt-5">Nhập lại mật khẩu</p>
+							<input type="password" style="color: white;" class="name color-transparent" name="password"
+								id="txt-confirm-password" value="test1">
+
+							<p style="font-size: 18px;" class="mt-5">Ảnh đại diện</p>
+							<input type="file" style="color: white;" class="name color-transparent" name="file" id="file">
+
+							<br>
+							<br>
+							<input type="button" class="btn-login w-100" value="Đăng ký" id="submit">
+						</form>
+					</div>
+					<div class="foot-login row mt-4 w-100">
+						<h6 class="col-6">
+							<a href="login.html" style="font-size: 18px;">Đăng nhập</a>
+						</h6>
+						<!-- <h6 class="col-6 text-right">
+							<a href="javascript:void(0)" style="font-size: 18px;">Đăng </a>
+						</h6> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //main -->
+
+	<script src="./assets/js/signup.js"></script>
+
+</body>
+
+</html>

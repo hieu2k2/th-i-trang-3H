@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+	<title>Trang sản phẩm</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  
+	
+	<link rel="stylesheet" href="Resources/css/myStyle.css">   
+	<link rel="stylesheet" href="Resources/fontawesome/css/all.min.css">    
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+	<script src="Resources/js/myJS.js"></script>
+
+</head>  
+
+
+<body> 
+	 
+	<!-- Header -->
+	<div>
+		<!-- my-Header -->
+		<div class="my-head container-fluid">
+			<!-- Header-Top-Bar  -->
+			<div class="container d-flex justify-content-start align-items-start my-header">
+				<a href="index.html">
+					<img src="Resources/myImages/logo.png" alt="Logo" class="my-logo">
+				</a>
+				<form action="" class="d-inline-block my-form">
+					<div class="search row my-row">
+						<input type="text" placeholder="Bạn tìm gì..." class="my-search-text col-10">
+						<a class="btn btn-outline-primary col-2 my-search-button" style="height: 40px;">
+							<i class="fa fa-search"></i>
+						</a>
+					</div>
+				</form>
+				<div class="my-header-right d-flex justify-content-center align-items-center">
+					<a href="thongtinkhachang.html" class="ml-5 my-header-right-item my-header-right-item2 my-active"><strong>Huỳnh Ngọc Sơn</strong></a>  
+					<a href="thongtinkhachang.html" class="ml-2 mt-5 my-header-right-item my-header-right-item2 my-user-responsive">
+						<img src="Resources/myImages/user-s.png" alt="Huỳnh Ngọc Sơn" style="width: 40px;top: 25px;position: absolute;" >
+					</a> 
+					<a href="login.html" class="ml-5 my-header-right-item my-header-right-item2 my-res-a my-active"><strong>Đăng xuất</strong></a>
+					<a href="login.html" class="ml-2 mt-5 my-header-right-item my-header-right-item2 my-res-a my-user-responsive" >
+						<img src="Resources/myImages/user-s-logout.png" alt="Huỳnh Ngọc Sơn" class="ml-1" style="width: 40px;top: 25px;position: absolute;">
+					</a>
+					<a href="giohang.html" class="ml-5 my-header-right-item my-giohang my-lg">
+						<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+						Giỏ hàng
+						<span class="badge badge-danger my-no">4</span>
+					</a>
+					<a href="giohang.html" class="ml-2 my-header-right-item my-giohang my-sm my-res-a" style="margin-right: 15px;margin-top:20px;">
+						<i class="fa fa-cart-arrow-down" aria-hidden="true" style="right:5px;" ></i> 
+						<span class="badge badge-danger my-no">4</span>
+					</a>
+				</div>
+			</div>
+			<!-- //Header-Top-Bar  -->
+
+
+			<!-- Navigation --> 
+			<div class="d-flex justify-content-center align-items-center Navigation"> 
+				<ul class="my-nav d-flex justify-content-center my-nav-temp" id="my-navs">
+					<li class="my-active">
+						<a href="index.html">TRANG CHỦ</a>
+					</li> 
+					<li class="my-parent-2">
+						<a href="sanpham.html">SẢN PHẨM <span></span></a>
+						<div class="my-dropdow">
+							<ul>
+								<li>
+									<a href="sanpham.html" class="li2">ĐIỆN THOẠI</a>
+								</li>
+								<li>
+									<a href="sanpham.html" class="li2">LAPTOP</a>
+								</li>
+								<li>
+									<a href="sanpham.html" class="li2">TABLET</a>
+								</li>
+								<li>
+									<a href="sanpham.html" class="li2">SMART WATCH</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="my-parent-2">
+						<a href="phukien.html">PHỤ KIỆN</a>
+						<div class="my-dropdow">
+							<ul>
+								<li>
+									<a href="phukien.html" class="li2">PHỤ KIỆN ĐIỆN THOẠI</a>
+								</li>
+								<li>
+									<a href="phukien.html" class="li2">PHỤ KIỆN LAPTOP</a>
+								</li>
+								<li>
+									<a href="phukien.html" class="li2">PHỤ KIỆN TABLET</a>
+								</li>
+								<li>
+									<a href="phukien.html" class="li2">PHỤ KIỆN SMART WATCH</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="gioithieu.html">GIỚI THIỆU</a>
+					</li>
+					<li>
+						<a href="lienhe.html">LIÊN HỆ</a>
+					</li>
+				</ul>
+				<a href="javascript:void(0);" style="font-size: 50px;" class="icon" id="btn-toggle">&#9776;</a>
+			</div>
+			<!-- //Navigation -->
+			
+		</div>
+
+		<!-- end my-Header -->  
+
+	</div>
+	<!-- //Header --> 
+
+
+  <!-- Render body -->
+	<div class="ads-grid  py-sm-5 pt-4" style="padding-bottom:0px !important; padding-top: 0 !important;">
+		<div class="container py-xl-4 py-lg-2">  
+
+			<!-- Địa chỉ trang --> 
+			<ol class="dia-chi" style="background-color: white; font-size: 20px;">
+				<li><a href="index.html">Trang chủ</a></li> 
+				<li class="active">Phụ kiện</li>  
+			</ol> 
+			<!-- // Địa chỉ trang -->
+
+			<div class="row content-san-pham">
+
+				<!-- Lọc sản phẩm -->
+
+				<div class="loc-content col-lg-3">
+					<div class="wrapper-item">
+						<div class="item">
+							<button id="item-button-1" data-text="show-list-1" onclick="ShowSanPham(this)">Nhãn hiệu</button>
+							<ul id="show-list-1">
+								<li>
+									<input type="checkbox" id="iPhone">
+									<label for="iPhone">iPhone</label> 
+								</li>
+								<li>
+									<input type="checkbox" id="SAMSUNG">
+									<label for="SAMSUNG">SAMSUNG</label>
+								</li>
+								<li>
+									<input type="checkbox" id="OPPO">
+									<label for="OPPO">OPPO</label>
+								</li>
+								<li>
+									<input type="checkbox" id="VIVO">
+									<label for="VIVO">VIVO</label>
+								</li>
+								<li>
+									<input type="checkbox" id="realme">
+									<label for="realme">realme</label>
+								</li>
+								<li>
+									<input type="checkbox" id="Nokia">
+									<label for="Nokia">Nokia</label>
+								</li>
+								<li>
+									<input type="checkbox" id="HUAWEI">
+									<label for="HUAWEI">HUAWEI</label>
+								</li>
+								<li>
+									<input type="checkbox" id="MOBELL">
+									<label for="MOBELL">MOBELL</label>
+								</li>
+								<li>
+									<input type="checkbox" id="ITEL">
+									<label for="ITEL">ITEL</label>
+								</li>
+								<li>
+									<input type="checkbox" id="MASSTEL">
+									<label for="MASSTEL">MASSTEL</label>
+								</li>
+								<li>
+									<input type="checkbox" id="XIAOMI">
+									<label for="XIAOMI">XIAOMI</label>
+								</li>
+							</ul>
+						</div>
+						<div class="item">
+							<button id="item-button-2" data-text="show-list-2" onclick="ShowSanPham(this)">Đánh giá</button> 
+							<ul id="show-list-2" class="star-san-pham">
+								<li>
+									<input type="checkbox" class="checked" id="star-1">
+									<label for="star-1">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<span>5.0</span>
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" class="checked" id="star-2">
+									<label for="star-2">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<span>4.0</span>
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" class="checked" id="star-3">
+									<label for="star-3">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<span>3.0</span>
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" class="checked" id="star-4">
+									<label for="star-4">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<span>2.0</span>
+									</label>
+								</li>
+								<li>
+									<input type="checkbox" class="checked" id="star-5">
+									<label for="star-5">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<span>1.0</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="item">
+							<button id="item-button-3" data-text="show-list-3" onclick="ShowSanPham(this)">Giá</button> 
+							<div class="wrapper-gia" id="show-list-3">
+								<div class="item-list item-gia" >
+									<input type="text" placeholder="Tối thiểu"> -
+									<input type="text" placeholder="Tối đa">
+							   </div>
+							</div>
+						</div>
+						<div class="item">
+							<button id="item-button-4" data-text="show-list-4" onclick="ShowSanPham(this)">Giảm giá</button> 
+							<ul id="show-list-4">
+								<li>
+									<input type="checkbox" id="giam-gia-1">
+									<label for="giam-gia-1">5% trở lên</label>
+								</li>
+								<li>
+									<input type="checkbox" id="giam-gia-2">
+									<label for="giam-gia-2">10% trở lên</label>
+								</li>
+								<li>
+									<input type="checkbox" id="giam-gia-3">
+									<label for="giam-gia-3">20% trở lên</label>
+								</li>
+								<li>
+									<input type="checkbox" id="giam-gia-4">
+									<label for="giam-gia-4">30% trở lên</label>
+								</li>
+								<li>
+									<input type="checkbox" id="giam-gia-5">
+									<label for="giam-gia-5">50% trở lên</label>
+								</li>
+								<li>
+									<input type="checkbox" id="giam-gia-6">
+									<label for="giam-gia-6">60% trở lên</label>
+								</li>
+							</ul>
+						</div>
+						<div class="item">
+							<button id="item-button-5" data-text="show-list-5" onclick="ShowSanPham(this)">Đơn vị vận chuyển</button>  
+							<ul id="show-list-5">
+								<li>
+									<input type="checkbox" id="giao-hang-1">
+									<label for="giao-hang-1">Giao Hàng Tiết Kiệm</label>
+								</li> 
+								<li>
+									<input type="checkbox" id="giao-hang-2">
+									<label for="giao-hang-2">Giao Hàng nhanh</label>
+								</li> 
+								<li>
+									<input type="checkbox" id="giao-hang-3">
+									<label for="giao-hang-3">Viettel Post</label>
+								</li> 
+								<li>
+									<input type="checkbox" id="giao-hang-4">
+									<label for="giao-hang-4">NowShip</label>
+								</li> 
+								<li>
+									<input type="checkbox" id="giao-hang-5">
+									<label for="giao-hang-5">Ninja Van</label>
+								</li> 
+							</ul>
+						</div>
+						<div class="item text-center" style="background-color: rgba(0, 123, 255, 0.39);">
+							<button class="submit-ap-dung">Áp dụng</button>
+						</div>
+					</div>
+				</div> 
+ 
+
+
+				<!-- Danh sách các sản phẩm --> 
+				<div class="col-lg-9">
+					<div class="wrapper">		 
+						
+						<div class="px-sm-1 px-1 py-sm-5">
+							<div class="row">
+
+
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss1.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Pin sạc dự phòng 7500mAh
+                                            </a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">210.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">300.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+ 
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss2.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Pin sạc dự phòng Polymer</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">315.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">450.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+ 
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss3.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Pin sạc dự phòng Polymer 10.000mAh</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">315.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">450.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+<!--  
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss4.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Pin sạc dự phòng Polymer 10.000mAh</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">637.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">750.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div>  -->
+                                 
+							</div>
+						</div> 
+						
+						<div class="px-sm-1 px-1 py-sm-5">
+							<div class="row">
+
+
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss5.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Cáp 3 đầu Lightning Type C Micro 1m</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">154.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">220.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+<!--  
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss6.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Cáp Lightning MFI 1m Mbest DS949-WB Xám</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">203.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">290.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div>  -->
+ 
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss7.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Cáp Lightning MFI 2m Mbest DS951-WB Gold</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">203.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">290.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+ 
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss8.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Adapter sạc 4 cổng USB Type C</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">1.000.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">1.100.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                 
+							</div>
+						</div> 
+						
+						<div class="px-sm-1 px-1 py-sm-5">
+							<div class="row">
+
+
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss9.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Tai nghe Bluetooth Beats Flex MYMC2</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">1.490.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">1.990.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+ 
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss10.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Tai nghe EP Gaming Asus Rog Cetra Core Đen</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">1.190.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">1.390.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+<!--  
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss11.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Tai nghe EP Gaming JBL Quantum 50</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">890.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">990.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+  -->
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss12.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Tai nghe Bluetooth Beats Powerbeats 3 ML8V2</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">1.990.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">2.090.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                 
+							</div>
+						</div> 
+						
+						<div class="px-sm-1 px-1 py-sm-5">
+							<div class="row">
+
+
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss13.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Chuột Bluetooth Microsoft Arc</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">2.450.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">2.750.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+<!--  
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss14.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Chuột Bluetooth Silent Rapoo M500</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">500.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">600.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+  -->
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss15.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Chuột không dây Zadez M338</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">300.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">350.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+ 
+                                <div class="card-style-2">
+                                    <div class="front">
+                                        <img src="Resources/myImages/ss16.jpg" class="img-hover" alt="">
+                                    </div>
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <a href="chitietsanpham.html" class="ten">Chuột Gaming Zadez G151M Đen</a>
+                                            <p class="text-center mx-auto text-danger mb-0 gia-back">300.000 
+                                                <span class="VND badge badge-danger">đ
+                                                </span> 
+                                            </p>
+                                            <del class="text-center gia-back">370.000 <span class="VND badge badge-default" style="background-color: gray">đ</span></del>
+                                            <button class="btn-them-back">Thêm vào giỏ</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                 
+							</div>
+						</div>
+						
+						   
+						
+					</div>
+					<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-center">
+						  <li class="page-item">
+							<a class="page-link" href="sanpham.html" aria-label="Previous">
+							  <span aria-hidden="true">&laquo;</span>
+							</a>
+						  </li>
+						  <li class="page-item active"><a class="page-link" href="sanpham.html">1</a></li>
+						  <li class="page-item"><a class="page-link" href="sanpham.html">2</a></li>
+						  <li class="page-item"><a class="page-link" href="sanpham.html">3</a></li>
+						  <li class="page-item">
+							<a class="page-link" href="sanpham.html" aria-label="Next">
+							  <span aria-hidden="true">&raquo;</span>
+							</a>
+						  </li>
+						</ul>
+					  </nav>
+				</div>
+				<!-- // Danh sách các sản phẩm -->
+
+
+		</div>
+	</div>
+
+	<!-- Thông báo thêm sản phẩm -->
+	<div class="container-modal">
+		<div class="my-modal">
+			<div class="modal-header d-flex">
+				<div class="modal-header-text mr-auto">Thông báo</div>
+				<button class="modal-close ml-auto btn btn-warning">Đóng</button>
+			</div> 
+			<div class="modal-text lead">Bạn đã thêm sản phẩm vào giỏ hàng thành công!</div>
+		</div> 
+		
+		<script>
+			$(document).ready(()=>{
+				$('.btn-submit').click(()=>{
+					$('.my-modal').slideDown(400);
+				})
+
+				$('.modal-close').click(()=>{
+					$('.my-modal').slideUp(400);
+				})
+			})
+		</script>
+		
+	</div>
+	<!-- // Thông báo thêm sản phẩm -->
+
+  <!-- End Render body --> 
+
+	<!-- Footer -->
+	<div class="footer pt-4">
+		<div class="row">
+
+			<div class="col-md-3 my-mb">
+				<ul>
+					<span class="my-caption-f">HỖ TRỢ KHÁCH HÀNG</span>
+					<br> 
+					<li>
+						<a href="#">
+							<span class="hotline">Chăm sóc khách hàng: 1900-6035 </span> (1000đ/phút , 8-21h kể cả T7, CN)
+						</a>
+					</li>
+					<li><a href="#">Các câu hỏi thường gặp</a></li>
+					<li><a href="#">Gửi yêu cầu hỗ trợ</a></li>
+					<li><a href="#">Hướng dẫn đặt hàng</a></li>
+					<li><a href="#">Hướng dẫn mua trả góp</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3 my-mb">
+				<ul>
+					<span class="my-caption-f">VỀ CHÚNG TÔI</span>
+					<br> 
+					<li><a href="gioithieu.html">Giới thiệu</a></li>
+					<li><a href="#">Chính sách bảo mật thanh toán</a></li>
+					<li><a href="#">Chính sách bảo mật thông tin cá nhân</a></li>
+					<li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+					<li><a href="#">Điều khoản sử dụng</a></li>
+					<li><a href="#">Bán hàng doanh nghiệp</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3 my-mb">
+				<div>
+					<span class="my-caption-f">PHƯƠNG THỨC THANH TOÁN</span>
+					<br> 
+					<div class="cols">
+						<div class="cols-2">
+							<a href="#">
+								<img src="Resources/myImages/p1.png" class="my-icon-f" alt="">
+							</a>
+						</div>
+						<div class="cols-2">
+							<a href="#">
+								<img src="Resources/myImages/p2.png" class="my-icon-f" alt="">
+							</a>
+						</div>
+						<div class="cols-2">
+							<a href="#">
+								<img src="Resources/myImages/p3.png" class="my-icon-f" alt="">
+							</a>
+						</div>
+						<div class="cols-2">
+							<a href="#">
+								<img src="Resources/myImages/p4.png" class="my-icon-f" alt="">
+							</a>
+						</div>
+						<div class="cols-2">
+							<a href="#">
+								<img src="Resources/myImages/p5.png" class="my-icon-f" alt="">
+							</a>
+						</div>
+						<div class="cols-2">
+							<a href="#">
+								<img src="Resources/myImages/p6.png" class="my-icon-f" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 my-mb">
+				<ul>
+					<span class="my-caption-f">ỨNG DỤNG TRÊN ĐIỆN THOẠI</span>
+					<br> 
+					<div class="my-ap">
+						<div class="col-12 my-app-img">
+							<a href="#" class="d-block">
+                                <img src="Resources/myImages/app1.png" style="width: 230px;" class="my-icon-f" alt="">
+                            </a>
+						</div>
+						<div class="col-12 my-app-img mt-2">
+							<a href="#">
+								<img src="Resources/myImages/app2.png" style="width: 230px;" class="my-icon-f" alt="">
+							</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+	<!-- //Footer -->
+
+	<!-- Font icon facebook, instagram, googleapis, twitter, youtube vi fontawesome khong dung duoc -->
+	<link rel="stylesheet" href="Resources/fontawesome/myFont/icofont/icofont.min.css">
+	
+	<!--Địa chỉ-->
+	<div class="my-footer">
+		<p class="my-dia-chi"><span>Địa chỉ văn phòng:</span> Khu phố 6, Phường Linh Trung, Quận Thủ Đức, TP.Hồ Chí Minh.
+		</p>
+		<p class="my-dia-chi mb-3">Nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại
+			văn phòng hoặc trung tâm xử lý đơn hàng.</p>
+		<div class="row">
+			<div class="col-6 pr-0">
+				<p style="color: #ffffff !important;" class="my-copy">© 2020 Design by <a href="javascript:void(0)"
+						target="=_blank" style="color: #ff0000 !important;">
+						Huỳnh Ngọc Sơn </a></p>
+			</div>
+			<div class="col-6 pr-0">
+				<div>
+					<ul class="social-icons d-flex justify-content-end align-items-center">
+						<li>
+							<a href="#" class="facebook" title="Facebook">
+								<i class="icofont-facebook my-facebook my-icon-f" aria-hidden="true"></i> 
+							</a>
+						</li>
+						<li>
+							<a href="#" class="twitter" title="Twitter">
+								<i class="icofont-twitter my-twitter my-icon-f" aria-hidden="true"></i> 
+							</a>
+						</li>
+						<li>
+							<a href="#" class="googleplus" title="Google">
+								<i class="icofont-google-plus my-google my-icon-f" aria-hidden="true"></i> 
+							</a>
+						</li>
+						<li>
+							<a href="#" class="instagram wthree" title="Instagram">
+								<i class="icofont-instagram my-instagram my-icon-f" aria-hidden="true"></i> 
+							</a>
+						</li>
+						<li>
+							<a href="#" class="youtube" title="youtube">
+								<i class="icofont-youtube-play my-youtube my-icon-f" aria-hidden="true"></i> 
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div> 
+	<!--// Địa chỉ-->
+  
+
+	<!-- Chatbox --> 
+	<div>
+		<div class="message-dialog message-hiden">
+			<div class="mess-header d-flex align-items-center" style="box-shadow: 0 1px 1px rgb(224, 224, 224);">
+				<div class="mr-auto ml-3 mt-3 d-flex align-items-center">
+					<img src="Resources/myImages/icon-amazon.png" alt="" class="mr-1" style="width:30px; height: 30px; border-radius:50%;">
+					<span style="font-size: 18px;">Hỗ trợ online</span>
+				</div>
+				<div class="ml-0 mr-3 mt-1">
+					<span class="icon-ho-top text-primary" style="cursor: pointer;"><i class="fas fa-video"></i></span>
+					<span class="icon-ho-top text-primary" style="cursor: pointer;"><i class="fa fa-phone" aria-hidden="true"></i></i></span>
+					<span class="message-minimize icon-ho-top text-primary" style="cursor: pointer;">X</span>
+				</div>
+			</div> 
+			<div class="message-content px-2" style="overflow: auto;">
+
+				<div class="message-text d-flex justify-content-start mt-3">
+					<div style="width: 35px;"></div>
+					<div class="message-comment w-75" >
+						<div class="mess-one pt-1 pl-4 pr-4 pb-1" style="border-radius: 18px; border-bottom-left-radius: 0;background-color:rgb(224, 224, 224)">
+							<p style="color: black !important; border:none; font-size:14px; margin-bottom:0;"> 
+								Cảm ơn bạn đã cho phép chúng tôi cơ hội để hỗ trợ bạn.	<br>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="message-text d-flex justify-content-start mt-1">
+					<div style="width: 35px;"></div>
+					<div class="message-comment w-75" >
+						<div class="mess-one pt-1 pl-4 pr-4 pb-1" style="border-radius: 18px; border-bottom-left-radius: 0;border-top-left-radius: 0;background-color:rgb(224, 224, 224)">
+							<p style="color: black !important; border:none; font-size:14px;" class="mb-0"> 
+								Cảm ơn bạn đã cho phép chúng tôi cơ hội để hỗ trợ bạn.	<br>
+								Chào mừng bạn đến cửa hàng, Tìm những gì bạn thích ... ❤	<br>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="message-text d-flex justify-content-start mt-1">
+					<a href="javascript:void(0)" class="mt-auto"><img src="Resources/myImages/icon-amazon.png" class="mt-auto mr-2" alt=""style="width:30px;height:auto; border-radius:50%;"></a>
+					<div class="message-comment w-75" >
+						<div class="mess-one pt-1 pl-4 pr-4 pb-1" style="border-radius: 18px;border-top-left-radius: 0; background-color:rgb(224, 224, 224)">
+							<p style="color: black !important; border:none; font-size:14px;" class="mb-0">
+								Tất cả các sản phẩm của chúng tôi là trong kho.	<br>
+								Dịch vụ khách hàng Thời gian trực tuyến: 9 xuất 00 AM-18 00 00.❤	<br>
+								Giới thiệu về Thời gian giao hàng Giao hàng 1-2 ngày, Nhận trong 7-15 ngày.❤ 	<br>
+							</p>
+						</div>
+					</div>
+				</div>
+				<p class="mess-date text-center lead my-show-chat2" >17:50, 21 Tháng 10, 2020</p> 
+	
+				<div class="message-text justify-content-start mt-1 mess-hiden my-hiden my-show-chat1" style="position: relative; height: auto;">
+					<div style="width: 400px;">
+						<div class="message-comment w-75" style="margin-left: 60px;" >
+							<div class="mess-one pt-1 pl-4 pr-4 pb-1" style="border-radius: 18px; background-color:rgb(224, 224, 224)">
+								<p style="color: black !important; border:none; font-size:14px;" id="mess-hiden-text" class="mb-0">
+									 
+								</p>
+							</div>
+						</div> 
+					</div> 
+
+					<a href="javascript:void(0)" class="mt-auto" style="position: absolute; bottom: 0; right: -8px;">
+						<img src="Resources/myImages/user-s.png" class="mt-auto mr-2" alt=""style="width:30px;height:auto; border-radius:50%;">
+					</a>	
+				</div>
+
+				<p class="mess-date text-center lead mess-hiden my-hiden my-show-chat2" style="clear: both;" >17:50, 21 Tháng 10, 2020</p> 
+
+				<div class="clearfix"></div>
+
+				<script>
+					$(window).ready(function(){
+							$("#btn-send-mess").click(function() {
+								var date = new Date();
+								var text = $("#mess-text-current").val();
+								$("#mess-text-current").val("");
+								
+								if( text != "") {
+									$(".my-show-chat1").removeClass("my-hiden").addClass("d-flex");
+									$(".my-show-chat2").removeClass("my-hiden").text(date.getMinutes() + ":" + date.getHours() + ", " + date.getDate() + " Tháng " + (date.getMonth() + 1) + ", " + date.getFullYear());
+									$("#mess-hiden-text").text(text);
+
+								}
+
+						})
+					})
+				</script>
+
+			</div>
+			<div class="message-footer mt-auto d-flex px-2 justify-content-center align-items-center" style="height: 50px;box-shadow: 0 -1px 1px rgb(224, 224, 224);;">
+				<a href="javascript:void(0)" class="icon-ho ml-2"><i class="fa fa-camera text-primary" aria-hidden="true" style="font-size: 30px;"></i></a>
+				<a href="javascript:void(0)" class="icon-ho ml-2"><i class="fa fa-paperclip" aria-hidden="true" style="font-size: 30px;"></i></a>
+				<input type="text" class="mx-1" style="width: 220px; padding:5px 10px;margin-bottom: 0px;background-color: rgb(224, 224, 224);color: black;font-size:14px; border-radius: 20px;" placeholder="Nhập nội dung bạn muốn gửi..." id="mess-text-current">
+				<a href="javascript:void(0)" class="icon-ho ml-2" id="btn-send-mess"><i class="fa fa-paper-plane text-primary" aria-hidden="true" style="font-size: 30px"></i></a>  
+			</div>
+		</div>
+		<div class="message-icon">
+			<i class="far fa-comment-dots"></i>
+		</div> 
+	</div>
+	<!-- Lên đầu trang -->
+	<a href="#" class="len-dau-trang">  
+		<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+	</a> 
+	<!--//Chatbox --> 
+
+</body> 
+</html>

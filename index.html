@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+	<title>Trang chủ</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="Resources/css/myStyle.css">
+	<link rel="stylesheet" href="Resources/fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="Resources/js/myJS.js"></script>
+
+</head>
+
+<body>
+	<!-- Header -->
+	<div w3-include-html="./partials/headerWithSlide.html"></div>
+
+	<!-- //Header -->
+
+
+	<!-- sản phẩm mới nhất -->
+	<div class="sp-dien-thoai">
+		<div class="container">
+			<p class="title-dien-thoai">
+				SẢN PHẨM MỚI NHẤT
+			</p>
+			<div class="row show-san-pham latest-product">
+			</div>
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+	<!-- //Điện thoại -->
+
+
+	<!-- Tablet -->
+	<div class="w-75 mx-auto">
+		<p class="title-dien-thoai" style="margin-top: 50px;">
+			SẢN PHẨM HOT
+		</p>
+		<div class="row div-parent-sp hot-product">
+		</div>
+	</div>
+	<!-- // Tablet -->
+
+
+	<!-- Laptop  để sau-->
+	<div style="padding: 1px 0!important; background-color :#F5F5F5;margin-top: 70px;padding-bottom: 50px !important;">
+		<p class="title-dien-thoai" style="margin-top: 50px;">
+			SẢN PHẨM MỚI
+		</p>
+		<div class="row w-75 mx-auto new-product">
+		</div>
+	</div>
+	<!-- // Laptop -->
+
+
+	<!-- Sản phẩm s -->
+	<div class="new-sp">
+		<div class="new-sp-text">
+			<p class="ten">Bí Quyết <span>Thời Trang</span></p>
+			<p class="cap1">Váy đầm công sở thương hiệu GUMAC</p>
+			<p class="cap2">Chất lụa tơ tằm | Thoáng mát</p>
+			<div class="d-flex justify-content-center align-items-center">
+				<button>
+					ĐẶT TRƯỚC <br>
+					<span>Cọc 200.000<sup>đ</sup> </span>
+				</button>
+				<button>
+					TRẢ GÓP <br>
+					<span>Cọc 200.000<sup>đ</sup> </span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- // Sản phẩm mới -->
+
+
+	<!-- Smart watch -->
+	<div class="sp-smart-watch sp-dien-thoai">
+		<div class="container">
+			<p class="title-dien-thoai">
+				SẢN PHẨM SẮP RA MẮT
+			</p>
+			<div class="sp-smart-watch-grids row show-san-pham future-product">
+			</div>
+		</div>
+		<!-- // Smart watch -->
+
+
+		<!--Đăng ký-->
+		<div class="bg-dang-ky">
+
+			<h3>ĐĂNG KÝ ĐỂ NHẬN THÔNG BÁO MỚI NHẤT</h3>
+			<p>Đăng ký với chúng tôi để có quyền truy cập cấp cao nhất vào các phong cách và xu hướng mới của chúng tôi</p>
+			<div>
+				<a class="btn-dang-ky px-4 py-2" href="javascript:void(0)"
+					style="font-size: 1.5vw; text-decoration: none;">ĐĂNG KÝ</a>
+
+				<div class="show-dang-ky">
+					<div class="content-dang-ky">
+						<h2>ĐĂNG KÝ</h2>
+						<input type="text" placeholder="Vui lòng nhập email">
+						<button onclick="DangKyFunction()" class="dang-ky-thanh-cong">ĐĂNG KÝ</button>
+						<button class="close-dang-ky">X</button>
+					</div>
+				</div>
+
+			</div>
+
+			<script>
+				$(document).ready(() => {
+					$(".btn-dang-ky").click(() => {
+						$(".show-dang-ky").fadeIn(200);
+					})
+
+					$(".close-dang-ky").click(() => {
+						$(".show-dang-ky").fadeOut(200);
+					})
+
+				})
+
+				function DangKyFunction() {
+					$(".show-dang-ky").fadeOut(200, function () {
+						alert("Bạn đã đăng ký nhận thông báo thành công!");
+					});
+				}
+			</script>
+
+
+		</div>
+		<!--// Đăng ký-->
+
+
+		<div w3-include-html="./partials/footer.html"></div>
+
+		<script src="./assets/js/includeHtml.js"></script>
+		<script src="./assets/js/index.js"></script>
+		<script type="module" src="./assets/js/header.js"></script>
+
+
+</body>
+
+</html>

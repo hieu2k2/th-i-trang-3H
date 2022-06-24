@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+	<title>Trang sản phẩm</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="Resources/css/myStyle.css">
+	<link rel="stylesheet" href="Resources/fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="Resources/js/myJS.js"></script>
+
+</head>
+
+
+<body>
+
+	<!-- Header -->
+	<div w3-include-html="./partials/headerWithoutSlide.html"></div>
+	<!-- //Header -->
+
+	<!-- Render body -->
+	<div class="ads-grid  py-sm-5 pt-4" style="padding-bottom:0px !important; padding-top: 0 !important;">
+		<div class="container py-xl-4 py-lg-2">
+
+			<!-- Địa chỉ trang -->
+			<ol class="dia-chi" style="background-color: white; font-size: 20px;">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li class="active">Điện thoại</li>
+			</ol>
+			<!-- // Địa chỉ trang -->
+
+			<div class="row content-san-pham">
+
+				<!-- Lọc sản phẩm -->
+
+				<div class="loc-content col-lg-3">
+					<form action="" class="form-filter">
+						<div class="wrapper-item">
+							<div class="item">
+								<button id="item-button-1" type="button" data-text="show-list-1"
+									onclick="ShowSanPham(this)">Nhãn hiệu</button>
+								<ul id="show-list-1">
+
+								</ul>
+							</div>
+							<div class="item">
+								<button id="item-button-2" type="button" data-text="show-list-2"
+									onclick="ShowSanPham(this)">Loại</button>
+								<ul id="show-list-2" class="star-san-pham">
+
+								</ul>
+							</div>
+							<div class="item">
+								<button id="item-button-3" type="button" data-text="show-list-3"
+									onclick="ShowSanPham(this)">Giá</button>
+								<div class="wrapper-gia" id="show-list-3">
+									<div class="item-list item-gia">
+										<input type="number" id="min-price" placeholder="Tối thiểu"> -
+										<input type="number" id="max-price" placeholder="Tối đa">
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<button id="item-button-4" type="button" data-text="show-list-4"
+									onclick="ShowSanPham(this)">Màu</button>
+								<ul id="show-list-4">
+								</ul>
+							</div>
+							<div class="item">
+								<button id="item-button-5" type="button" data-text="show-list-5"
+									onclick="ShowSanPham(this)">Kích thước</button>
+								<ul id="show-list-5">
+								</ul>
+							</div>
+							<div class="item text-center" style="background-color: rgba(0, 123, 255, 0.39);">
+								<button class="submit-ap-dung submit-filter" type="button">Áp dụng</button>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<!-- Danh sách các sản phẩm -->
+				<div class="col-lg-9">
+					<div class="wrapper entire-products">
+					</div>
+					<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-center pagination-product">
+						</ul>
+					</nav>
+				</div>
+				<!-- // Danh sách các sản phẩm -->
+			</div>
+		</div>
+
+		<!-- Thông báo thêm sản phẩm -->
+		<div class="container-modal">
+			<div class="my-modal">
+				<div class="modal-header d-flex">
+					<div class="modal-header-text mr-auto">Thông báo</div>
+					<button class="modal-close ml-auto btn btn-warning">Đóng</button>
+				</div>
+				<div class="modal-text lead">Bạn đã thêm sản phẩm vào giỏ hàng thành công!</div>
+			</div>
+
+			<script>
+				$(document).ready(() => {
+					$('.btn-submit').click(() => {
+						$('.my-modal').slideDown(400);
+					})
+
+					$('.modal-close').click(() => {
+						$('.my-modal').slideUp(400);
+					})
+				})
+			</script>
+
+		</div>
+		<!-- // Thông báo thêm sản phẩm -->
+		<!-- End Render body -->
+
+		<div w3-include-html="./partials/footer.html"></div>
+
+		<script src="./assets/js/includeHtml.js"></script>
+
+		<script type="module" src="./assets/js/sanpham.js"></script>
+
+		<script type="module" src="./assets/js/header.js"></script>
+
+</body>
+
+</html>

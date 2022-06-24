@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+	<title>Trang sản phẩm</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="Resources/css/myStyle.css">
+	<link rel="stylesheet" href="Resources/fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="Resources/js/myJS.js"></script>
+</head>
+
+
+<body>
+
+	<!-- Header -->
+	<div w3-include-html="./partials/headerWithoutSlide.html"></div>
+	<!-- //Header -->
+
+
+	<!-- Render body -->
+	<div>
+
+		<div class="container mb-5" style="padding-top: 25px;" id="cart-items">
+
+			<!-- Địa chỉ trang -->
+			<ol class="dia-chi" style="background-color: white; font-size: 20px;">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li class="active">Giỏ hàng</li>
+			</ol>
+			<!-- // Địa chỉ trang -->
+
+
+		</div>
+
+
+		<!-- Thanh toán -->
+		<h3 class="head-title" style="font-size: 36px; text-align: center;">
+			Tiến hành đặt hàng
+		</h3>
+
+		<div class="container mb-5">
+			<div class="wrapper-item-gio-hang p-5 pt-3">
+				<div class="dat-hang">
+					<div class="group row">
+						<span class="col-md-3">Họ và tên:</span>
+						<div class="col-md-9">
+							<input type="text" id="name" data-meta="Họ và tên" placeholder="Họ và tên của người nhận"
+								class="w-100 validate-input-dat-hang">
+						</div>
+					</div>
+					<div class="group row my-3">
+						<span class="col-md-3">Số điện thoại:</span>
+						<div class="col-md-9">
+							<input type="text" id="phone" data-meta="Số điện thoại" placeholder="Số điện thoại người nhận"
+								class="w-100 validate-input-dat-hang">
+						</div>
+					</div>
+					<div class="group row my-3">
+						<span class="col-md-3">Địa chỉ:</span>
+						<div class="col-md-9">
+							<input type="text" id="address" data-meta="Địa chỉ" placeholder="Địa chỉ người nhận"
+								class="w-100 validate-input-dat-hang">
+						</div>
+					</div>
+
+					<div class="group row my-3">
+						<span class="col-md-3">Email:</span>
+						<div class="col-md-9">
+							<input type="text" id="email" data-meta="Email" placeholder="Email người dùng"
+								class="w-100 validate-input-dat-hang">
+						</div>
+					</div>
+					<!-- <div class="group row my-3">
+						<span class="col-md-3">Yêu cầu về shop:</span>
+						<div class="col-md-9">
+							<textarea name="" id="" rows="3" class="w-100"
+								placeholder="Yêu cầu khác (không bắt buộc)"></textarea>
+						</div>
+					</div> -->
+
+					<hr>
+					</hr>
+
+					<div class="d-flex justify-content-between foot" style="border:none !important;">
+						<span>Tổng tiền:</span>
+						<span id="total">0 đ</span>
+					</div>
+					<div class="d-flex justify-content-between foot" style="border:none !important;">
+						<span><strong>Cần thanh toán:</strong></span>
+						<span><strong style="color: red" id="total-sub">0 đ</strong></span>
+					</div>
+
+					<hr>
+					</hr>
+
+					<div class="foot-button row">
+						<div class="col-6">
+							<button class="btn w-100 py-3" style="font-size: 20px; background-color:rgb(11, 124, 196)"
+								onclick="window.location = 'sanpham.html'">TIẾP
+								TỤC MUA HÀNG</button>
+						</div>
+						<div class="col-6">
+							<button class="btn w-100 py-3" style="font-size: 20px; background:#fd6e1d;"
+								id="dat-hang-submit">ĐẶT
+								HÀNG</button>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<!-- // Thanh toán -->
+
+	</div>
+	<!-- End Render body -->
+
+
+	<div w3-include-html="./partials/footer.html"></div>
+
+	<script src="./assets/js/includeHtml.js"></script>
+
+	<script type="module" src="./assets/js/giohang.js"></script>
+	<script type="module" src="./assets/js/header.js"></script>
+
+</body>
+
+</html>

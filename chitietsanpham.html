@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+	<title>Trang chi tiết sản phẩm</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" href="Resources/css/myStyle.css">
+	<link rel="stylesheet" href="Resources/fontawesome/css/all.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="Resources/js/myJS.js"></script>
+	<script type="module" src="milsymbol-2.0.0/src/milsymbol.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<div w3-include-html="./partials/headerWithoutSlide.html"></div>
+	<!-- //Header -->
+
+
+	<!-- ********************************************************************************************************* -->
+	<!-- Render body -->
+
+	<div class="py-0 chi-tiet-san-pham">
+		<div class="container py-xl-4 py-lg-2">
+			<!-- Địa chỉ trang -->
+			<ol class="dia-chi" style="background-color: white; font-size: 20px;">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="sanpham.html" id="address-category">Phân loại</a></li>
+				<li class="active" id="address-name">Tên sản phẩm</li>
+			</ol>
+			<!-- // Địa chỉ trang -->
+
+			<!-- // Thông tin nhanh -->
+			<div class="row thong-tin-nhanh-img" style="padding-top: 15px;margin-top: 30px;">
+				<div class="col-lg-5 col-md-8 p-0 mt-2">
+
+					<div class="show-sp row w-100 m-0 img-dien-thoai-show">
+						<div class="slide-show">
+
+							<div class="slides">
+								<input type="radio" name="" id="r1">
+								<input type="radio" name="" id="r2">
+								<input type="radio" name="" id="r3">
+
+								<div class="s1"><img src="" class="img-s-1" alt=""></div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Tao slide hinh anh -->
+					<style>
+						.slide-show {
+							width: 100%;
+							/* cho slide chinh bang width man hinh */
+							height: 300px;
+							background-color: #9dd7db;
+							overflow: hidden;
+							/* an di may cai slide khac slide chinh */
+							position: relative;
+						}
+
+						.img-dien-thoai-show:hover .s1 {
+							animation: none;
+						}
+
+						.slides {
+							width: 300%;
+							/* vi co tong cong 5 hinh anh, nen la 5 * 100% = 500% */
+							height: 100%;
+							display: flex;
+							/* chi cac item ben trong nam tren mot dong*/
+						}
+
+						.slides>div {
+							width: 33.33%;
+							/* 100% / 5 = 20% */
+							height: 100%;
+							transition: all 0.4s ease;
+						}
+
+						.slides>div img {
+							width: 100%;
+							height: 100%;
+						}
+
+						/* end dinh dang slides */
+
+						.label-img img {
+							border: 1px solid transparent;
+							opacity: 0.7;
+							height: 120px;
+						}
+
+						.label-img:hover img {
+							border: 1px solid red;
+							opacity: 1;
+						}
+
+						#r1:hover~.s1 {
+							margin-left: 0%;
+						}
+
+						#r2:hover~.s1 {
+							margin-left: -33.33%;
+						}
+
+						#r3:hover~.s1 {
+							margin-left: -66.66%;
+						}
+
+						.s1 {
+							/* animation: slide-change 9s infinite; */
+						}
+
+						@keyframes slide-change {
+							5% {
+								margin-left: -33.33%;
+							}
+
+							33.33% {
+								margin-left: -33.33%;
+							}
+
+							38.33% {
+								margin-left: -66.66%;
+							}
+
+							66.66% {
+								margin-left: -66.66%;
+							}
+
+							71.66% {
+								margin-left: 0%;
+							}
+
+							100% {
+								margin-left: 0%;
+							}
+						}
+					</style>
+
+				</div>
+
+				<div class="col-lg-7">
+					<h3 class="mb-3"><strong id="product-name">Điện thoại iPhone 11 Pro Max 512GB</strong></h3>
+					<p class="mb-3">
+					<div class="danh-gia-trung-binh mb-2">
+						<div class="w-100 d-flex text-center justify-content-star align-items-center">
+							<ul class="list-unstyled list-inline mb-0">
+								<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+								<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+								<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+								<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+								<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+							</ul>
+							<a href="#danh-gia-kh" style="font-size: 20px; color: rgb(0, 127, 240);margin-left:10px;">(Xem 80
+								đánh giá)</a>
+						</div>
+					</div>
+					<!-- <del class="mx-2 font-weight-light" id="del-gia">40.990.000đ</del> -->
+					<span class="item_price mx-3 text-danger" id="span-gia">38.990.000 <span class="badge badge-danger"
+							style="font-size: 10px; vertical-align: top;margin-top:5px;">đ</span></span>
+
+					<!-- <span class="label-tra-gop">Trả góp 0%</span> -->
+
+					<!-- <div class="opstion w-100">
+						<p>Nhãn hiệu: <span id="ops-text">512GB</span></p>
+						<div>
+							<button data-del="32.990.000đ">64GB - 30.990.000đ</button>
+							<button data-del="36.990.000đ">256GB - 34.990.000đ</button>
+							<button data-del="40.990.000đ">512GB - 38.990.000đ</button>
+						</div>
+					</div> -->
+
+					<style>
+						.opstion p {
+							font-size: 20px;
+						}
+
+						.opstion p span {
+							font-weight: bold;
+						}
+
+						.opstion div {
+							font-size: 20px;
+							display: flex;
+							justify-content: start;
+							align-items: center;
+						}
+
+						.opstion div button {
+							font-size: 16px;
+							width: 180px;
+							text-align: center;
+							margin: 5px 0px;
+							margin-right: 20px;
+							border: 2px solid transparent;
+							border-radius: 5px;
+						}
+
+						.opstion div button:hover {
+							background-color: rgb(146, 140, 140);
+						}
+
+						.btnClick {
+							border: 2px solid rgb(114, 7, 7) !important;
+						}
+					</style>
+
+					<script>
+						$(document).ready(() => {
+							$(".opstion button").click(function () {
+								var text = $(this).text().split(" - ");
+								$(".opstion button").each(function () {
+									$(this).removeClass("btnClick");
+								})
+								$(this).addClass("btnClick");
+
+								$("#ops-text").text(text[0]);
+								$("#span-gia").text(text[1]);
+								$("#del-gia").text($(this).attr("data-del"));
+
+							})
+						})
+					</script>
+
+					<label class="lable-phi-ship">Miễn phí ship nội thành TP.HCM và Hà Nội</label>
+					</p>
+					<div class="card">
+						<div class="card-header">
+							<h2 class="text-left"><strong>KHUYẾN MÃI LÊN ĐẾN 15%</strong></h2>
+							<p>Giá và khuyến mãi dự kiến áp dụng đến 1/7</p>
+						</div>
+						<div class="card-body py-1">
+							<ul class="khuyen-mai mb-0 list-unstyled">
+								<li><i class="fa fa-check-circle" aria-hidden="true"></i>Giảm giá 15% cho tất cả sản phẩm</li>
+								<li><i class="fa fa-check-circle" aria-hidden="true"></i>Phí ship ưu đãi khi vận chuyển liên
+									tỉnh</li>
+								<li><i class="fa fa-check-circle" aria-hidden="true"></i>Miễn phí ship nội thành TP.HCM và Hà
+									Nội
+								</li>
+							</ul>
+						</div>
+						<hr style="margin: 5px 0px;">
+						<div class="card-body py-1">
+							<ul class="khuyen-mai mb-0 list-unstyled">
+								<li><i class="fa fa-gift" aria-hidden="true"></i><span class="text-danger">Tặng 100.000₫</span>
+									mua hàng tại website thành viên, áp dụng khi mua Online tại Tp.HCM, Hà Nội và 1 số khu vực khác <a href="#">click xem chi tiết</a></li>
+							</ul>
+						</div>
+					</div>
+					<br></br>
+					<button class="w-100 btn btn-primary mua-ngay"
+						style="background-color:  #ff823b !important; border: none;" id="add-to-cart">
+						<p class="display-text text-center text-white"><strong>MUA NGAY</strong></p>
+						<span>Giao tận nơi hoặc nhận tại shop</span>
+					</button>
+					<br></br>
+					<div class="row w-100 ml-0">
+						<div class="col-6 pl-0">
+							<button class="w-100 btn btn-primary mua-ngay">
+								<p class="display-text text-center text-white"><strong>MUA TRẢ GÓP 0%</strong></p>
+								<span>Thủ tục đơn giản</span>
+							</button>
+						</div>
+						<div class="col-6 pr-0">
+							<button class="w-100 btn btn-primary mua-ngay">
+								<p class="display-text text-center text-white"><strong>TRẢ GÓP 0% QUA THẺ</strong></p>
+								<span>Visa, Master, JCB</span>
+							</button>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+			<!-- end thông tin nhanh -->
+
+
+			<!-- Đặc diểm nỗi bật -->
+			<h3 class="head-title" id="head-title">
+			</h3>
+			<div>
+				<p class="text-justify lead" style="color: black; font-size:18px;" id="product-description">
+
+				</p>
+				<!-- Đặc điểm nổi bặt -->
+
+
+				<!-- Facebook -->
+				<div class="face">
+					<button class="btn btn-primary" style="border-radius: 5px;">
+						<i class="fa fa-thumbs-up" aria-hidden="true" style="font-size: 16px;"></i>
+						<strong style="font-size:16px">Like</strong>
+						<span style="font-size:14px">100</span>
+					</button>
+					<button class="btn btn-primary ml-3" style="border-radius: 5px;">
+						<i class="fa fa-share-alt" aria-hidden="true" style="font-size: 16px;"></i>
+						<strong style="font-size:16px">Share</strong>
+					</button>
+				</div>
+				<!-- End facebook -->
+
+
+				<!-- Nhan xet -->
+				<div class="nhan-xet mt-5">
+					<div class="nhan-xet-content w-60 d-flex justify-content-between align-items-center py-5 pl-3"
+						style="background-color:#eee;">
+						<p class="lead my-pi" style="font-size:18px;margin-bottom:0px;color: black;width:61%;">Bài viết này
+							có hữu ích cho Bạn không?</p>
+						<div class="smile text-center a-nhan-xet text-center px-3 w-25">
+							<i class="far fa-smile-wink" style="font-size: 36px; color: blue;"></i>
+							<a href="javascript:void(0)">
+								<p style="color: black; font-weight: bold; font-size: 16px;" class="mb-0 my-hi text-center">Hữu
+									ích</p>
+							</a>
+						</div>
+						<div class="smile text-center a-nhan-xet text-center px-3 w-25">
+							<i class="far fa-angry" style="font-size: 36px; color: rgb(116, 9, 50);"></i>
+							<a href="javascript:void(0)">
+								<p class="mb-0 last my-hi text-center"
+									style="color: black; font-weight: bold; font-size: 16px; ">Không hữu ích</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- End nhan xet -->
+
+
+				<!-- Danh gia -->
+				<h2 id="danh-gia-kh" class="head-title">
+					KHÁCH HÀNG ĐÁNH GIÁ
+				</h2>
+				<div class="danh-gia w-100" style="background-color:#eee;">
+					<div class="danh-gia-sao w-100" style="padding: 20px;">
+						<h3 class="my-danh-gia">Đánh giá</h3>
+						<div class="row">
+							<div class="col-4 d-flex flex-column text-center align-items-center"
+								style="border-right: 1px solid gray;">
+								<span style="font-size: 50px; color: black;">4</span>
+								<ul class="list-unstyled list-inline">
+									<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+									<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+									<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+								</ul>
+								<span style="font-size: 20px; color: black;">80 đánh giá</span>
+							</div>
+							<div class="col-8 d-flex flex-column justify-content-center">
+								<div class="my-line">
+									<ul class="list-unstyled list-inline mb-0">
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+									</ul>
+									<div class="progress w-50">
+										<div class="progress-bar bg-warning" style="width:80%"></div>
+									</div>
+								</div>
+								<div class="my-line">
+									<ul class="list-unstyled list-inline mb-0">
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+									</ul>
+									<div class="progress w-50">
+										<div class="progress-bar bg-warning" style="width:60%"></div>
+									</div>
+								</div>
+								<div class="my-line">
+									<ul class="list-unstyled list-inline mb-0">
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+									</ul>
+									<div class="progress w-50">
+										<div class="progress-bar bg-warning" style="width:15%"></div>
+									</div>
+								</div>
+								<div class="my-line">
+									<ul class="list-unstyled list-inline mb-0">
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+									</ul>
+									<div class="progress w-50">
+										<div class="progress-bar bg-warning" style="width:5%"></div>
+									</div>
+								</div>
+								<div class="my-line">
+									<ul class="list-unstyled list-inline mb-0">
+										<li><i class="fa fa-star my-act" aria-hidden="true"></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+										<li><i class="far fa-star star-font" aria-hidden="true"></i></i></li>
+									</ul>
+									<div class="progress w-50">
+										<div class="progress-bar bg-warning" style="width:5%"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+
+						<h3 class="my-binh-luan text-left" style="font-size: 26px; margin-top: 50px;">
+							Bình luận
+						</h3>
+
+						<!-- here -->
+						<div id="reviews-content">
+
+						</div>
+
+
+						<hr>
+						<div style="margin-top:70px;">
+							<h2 class="text-left" style="font-size: 26px;margin-bottom: 20px;">Phản hồi của tôi</h2>
+
+							<form action="">
+								<div class="my-line mb-4" style="justify-content: start">
+									<ul class="list-unstyled list-inline mb-0 my-comment-start ml-0">
+										<li><a href="javascript:void(0)" data-id="1" class="rating-review"><i
+													class="far fa-star"></i></a></li>
+										<li><a href="javascript:void(0)" data-id="2" class="rating-review"><i
+													class="far fa-star"></i></a></li>
+										<li><a href="javascript:void(0)" data-id="3" class="rating-review"><i
+													class="far fa-star"></i></a></li>
+										<li><a href="javascript:void(0)" data-id="4" class="rating-review"><i
+													class="far fa-star"></i></a></li>
+										<li><a href="javascript:void(0)" data-id="5" class="rating-review"><i
+													class="far fa-star"></i></a></li>
+									</ul>
+									<span id="date-time"
+										style="color: #777; font-size: 14px; margin-left:15px; line-height: 14px; margin-top: 10px;"></span>
+								</div>
+								<textarea class="form-control" rows="5" id="mess-review"
+									placeholder="Mời bạn để lại bình luận về sản phẩm..." style="font-size:15px;"></textarea>
+								<div class="foot w-100 d-flex justify-content-between px-3 py-1"
+									style="background-color: white;">
+									<div class="text-primary" style="font-size:16px;"><a href="#"><i
+												class="fa fa-camera text-primary mr-2" aria-hidden="true"></i>Gửi ảnh</a></div>
+									<button class="btn btn-primary px-2" type="button" id="btn-submit-review">GỬI</button>
+								</div>
+							</form>
+						</div>
+
+						<!-- Chon sao script -->
+						<script>
+							var date = new Date();
+							var res = "Ngày " + date.getDate() + " tháng " + (date.getMonth() + 1) + ", " + date.getFullYear();
+							$('#date-time').text(res);
+
+							$(document).ready(function () {
+								$(".my-comment-start li a").click(function () {
+									var soSao = $(this).attr("data-id");
+									var dem = 0;
+									$(".my-comment-start li a i").each(function () {
+										if (dem < soSao) {
+											$(this).removeClass("far").addClass("fa");
+										} else {
+											$(this).removeClass("fa").addClass("far");
+										}
+										dem++;
+									})
+								})
+							})
+
+						</script>
+
+
+					</div>
+				</div>
+				<!-- End danh gia -->
+
+				<script>
+
+					$(document).ready(() => {
+						$('#my-coll').hide();
+						$('#btnXemThem').text('Xem thêm');
+						$('#my-comment').hide();
+						$('#my-comment2').hide();
+					})
+
+					$('#my-binh-luan-coll').click(() => {
+						$('#my-comment').slideToggle(400);
+					})
+					$('#my-binh-luan-coll2').click(() => {
+						$('#my-comment2').slideToggle(400);
+					})
+
+					$('#btnXemThem').click(() => {
+						$('#my-coll').slideToggle(400);
+						let text = $('#btnXemThem').text();
+						if (text == "Xem thêm") {
+							$('#btnXemThem').text("Thu gọn");
+						}
+						else {
+							$('#btnXemThem').text('Xem thêm');
+						}
+
+					})
+				</script>
+
+
+			</div>
+			<!-- // Đặc điểm nổi bật -->
+
+
+
+
+
+		</div>
+	</div>
+
+	<!-- End Render body -->
+	<!-- ********************************************************************************************************* -->
+
+
+
+	<div w3-include-html="./partials/footer.html"></div>
+
+	<script src="./assets/js/includeHtml.js"></script>
+
+	<script type="module" src="./assets/js/chitietsanpham.js"></script>
+	<script type="module" src="./assets/js/header.js"></script>
+</body>
+
+</html>
